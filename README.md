@@ -1,25 +1,59 @@
-# 🧹 Limpieza y Análisis de Datos
 
-## 📦 Requisitos
+# 🧹 Proyecto de Limpieza y Emparejamiento de Carreras Universitarias
 
-Antes de ejecutar el script, asegúrate de instalar todos los requerimientos necesarios. Estos se encuentran especificados en un archivo `.txt` con el mismo nombre del proyecto.
+Este proyecto realiza limpieza, estandarización y análisis de datos sobre la oferta académica en Ecuador, con especial enfoque en emparejar carreras ofrecidas por otras universidades con las de la **Universidad Técnica Particular de Loja (UTPL)** usando coincidencia difusa (*fuzzy matching*).
 
-Para instalar las dependencias, ejecuta el siguiente comando en la terminal:
+---
+
+## 📁 Estructura del Proyecto
+
+```
+├── limpieza.py                      # Script principal de procesamiento
+├── requirements.txt                 # Dependencias del entorno
+├── base-datos-abiertos_0502...     # Dataset bruto descargado (fuente SENESCYT)
+├── emparejamientos_similares.xlsx  # Resultados generados
+├── README.md                        # Este archivo
+```
+
+---
+
+## 📦 Instalación
+
+Asegúrate de tener Python 3.6+ instalado. Luego, instala las dependencias necesarias:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Con esto, tu entorno estará listo para que el código funcione correctamente.
-
 ---
 
 ## 🚀 Ejecución
 
-Una vez instalados los requerimientos, simplemente ejecuta el script principal. Este se encargará de:
+Ejecuta el script principal:
 
-- Realizar la limpieza de datos  
-- Separar la información según criterios definidos  
-- Analizar los datos tratados  
+```bash
+python limpieza.py
+```
 
-Al finalizar, se generará automáticamente un nuevo archivo **ya tratado y listo para trabajar**.
+Este script realiza:
+
+- ✅ Limpieza y estandarización de columnas clave  
+- ✅ Separación entre carreras UTPL y otras IES  
+- ✅ Emparejamiento de carreras similares usando FuzzyWuzzy  
+- ✅ Exportación a un archivo Excel (`emparejamientos_similares.xlsx`)
+
+---
+
+## 📚 Requisitos del Script
+
+Listado en `requirements.txt`:
+
+```
+pandas
+openpyxl
+fuzzywuzzy
+python-Levenshtein
+tqdm
+```
+
+
