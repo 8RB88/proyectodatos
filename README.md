@@ -1,9 +1,25 @@
-INSTRUCCIONES.
+# 🧹 Limpieza y Análisis de Datos
 
-primero se instalan todos los requerimentos, los cuales se encunetran en un archivo txt con el mismo nombre.
-para realizar la instalación se debe ejecutar la siguiente linea en el terminal, (pip install -r requirements.txt)
-con esto ya quedaria listo lo que se nesecita para que el codigo funione.
+## 📦 Requisitos
 
+Antes de ejecutar el script, asegúrate de instalar todos los requerimientos necesarios. Estos se encuentran especificados en un archivo `.txt` con el mismo nombre del proyecto.
 
-Luego simplemente se ejecuta el script para que haga la limpieza, separacion y analisis.
-al final se generara el nuevo archivo ya tratado y listo para trabajar.
+Para instalar las dependencias, ejecuta el siguiente comando en la terminal:
+
+```bash
+pip install -r requirements.txt
+```
+
+Con esto, tu entorno estará listo para que el código funcione correctamente.
+
+---
+
+## 🚀 Ejecución
+
+Una vez instalados los requerimientos, simplemente ejecuta el script principal. Este se encargará de:
+
+- Realizar la limpieza de datos  
+- Separar la información según criterios definidos  
+- Analizar los datos tratados  
+
+Al finalizar, se generará automáticamente un nuevo archivo **ya tratado y listo para trabajar**.
